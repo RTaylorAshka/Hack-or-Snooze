@@ -1,0 +1,39 @@
+/* Navigation bar */
+
+nav {
+  display: flex;
+  background-color: #131313;
+  color: #ff6600;
+  align-items: center;
+  padding: 5px 20px;
+  border-radius: 3px 3px 0 0;
+  height: 50px;
+ 
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-family:  'Press Start 2P', cursive;
+}
+
+.nav-link:hover{
+  text-decoration: none;
+  
+  color: #ffc096;
+  
+}
+
+.nav-link {
+  font-size: 0.85rem;
+  margin: 0 3px;
+  
+}
+
+.nav-right {
+  margin-left: auto;
+  text-align: right;
+  color: #ffa970;
+  font-weight: bold;
+}
+
+
