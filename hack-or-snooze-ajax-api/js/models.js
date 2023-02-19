@@ -24,8 +24,8 @@ class Story {
   /** Parses hostname out of URL and returns it. */
 
   getHostName() {
-    // UNIMPLEMENTED: complete this function!
-    return "hostname.com";
+    const host = (new URL(this.url));
+    return host.hostname;
   }
 }
 
@@ -77,7 +77,7 @@ class StoryList {
 
     await checkForRememberedUser();
 
-    if(user == undefined){
+    if(!currentUser){
       alert("please log in to post a story!");
       return;
     }

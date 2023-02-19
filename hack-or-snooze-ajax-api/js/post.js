@@ -30,7 +30,8 @@ function postSubmit(){
         });
     
     alert("Post submitted!");
-    start();
+    storyTabClick();
+    
     
 
 

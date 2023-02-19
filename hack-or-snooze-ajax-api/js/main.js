@@ -19,7 +19,8 @@ const $postFormPage = $("#post-form-container");
 const $postButton = $("#post-button");
 
 const $storyTab = $("#story-tab");
-const $favTab = $("fav-tab");
+const $favTab = $("#fav-tab");
+const $allFavourites = $("#all-favourites-list")
 
 /** To make it easier for individual components to show just themselves, this
  * is a useful function that hides pretty much everything on the page. After
@@ -31,7 +32,8 @@ function hidePageComponents() {
     $allStoriesList,
     $loginForm,
     $signupForm,
-    $postFormPage
+    $postFormPage,
+    $allFavourites
   ];
   // components.forEach(c => c.hide());
   components.forEach(c => {
@@ -46,10 +48,12 @@ function hidePageComponents() {
 
 async function start() {
   console.debug("start");
+  hidePageComponents();
 
   // "Remember logged-in user" and log in, if credentials in localStorage
   await checkForRememberedUser();
   await getAndShowStoriesOnStart();
+  putFavouritesOnPage();
 
   // if we got a logged-in user
   if (currentUser) updateUIOnUserLogin();

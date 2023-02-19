@@ -12,7 +12,7 @@
 }
 
 .stories-list > li {
-  color: rgb(211, 211, 211);
+  color: rgb(255, 255, 255);
   font-size: 1rem;
   margin: 5px 0;
 }
@@ -28,7 +28,7 @@
 
 .story-link {
   color: #ffa970;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   margin: 18px 0;
 }
@@ -36,7 +36,7 @@
 .story-link:hover {
   text-decoration: none;
   color: #ffd9c0;
-  font-size: 1.25rem;
+  
   
 }
 
@@ -49,27 +49,57 @@
 }
 
 .post-icons {
-  float: left;
-  padding: 0px;
+  position: absolute;
+  transform: translateX(-100px)
+  
+  
+  /* padding: 0px;
   margin-right: 20px;
   margin-left: 0;
+  margin-bottom: 20px; */
   
 }
 
-.post-icons > button{
-  float: left;
-  font-size: 1.5rem;
-  background: none;
+.post-icons button{
+  /* position: absolute; */
+  float: right;
+  width: 100px;
+  background-color: rgb(117, 117, 117);
   border: none;
-  color: rgb(124, 124, 124);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  
+  /* padding: 0px;
+  margin-right: 20px;
+  margin-left: 0;
+  margin-bottom: 20px; */
+  
 }
 
-button.fav:hover{
+.post-icons button:hover{
+  /* position: absolute; */
   
-  color: #ff9f9f;
+  background-color: rgb(134, 134, 134);
+  transform: scale(110%);
+
+  color: rgb(255, 255, 255);
+  
+  
 }
 
-button.delete:hover{
-  
-  color: #ffc400;
+.post-options {
+  float: left;
+  background: none;
+  color: rgb(155, 155, 155);
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: large;
 }
+
+
+
+
+
+
